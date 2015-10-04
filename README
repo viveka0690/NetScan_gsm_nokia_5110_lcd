@@ -1,0 +1,16 @@
+/*************************************************************
+*Project : Network Scanner with sim900 and display on Nokia Screen
+*Author : Vivek Kumar
+*
+*Description: This project is based on gsm Netwrok scan with help of sim900 and displays on nokia 5110 module with bit banging
+**************************************************************/
+
+To compile 
+
+gcc -o uart uart.c lcd_pcd8544.c lcd_pcd8544_callouts.c bcm2835.c -I.
+
+if bcm2835 library is already included, then:
+
+gcc -o uart uart.c lcd_pcd8544.c lcd_pcd8544_callouts.c -lbcm2835
+
+ 
